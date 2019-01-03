@@ -11,6 +11,11 @@ group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'byebug', '9.0.6', platform: :mri
 end
+
+group :production do
+  gem 'pg', '0.20.0'
+end
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
